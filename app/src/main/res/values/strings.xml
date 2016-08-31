@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LinkTv</string>
+    <string name="do_you_close_really">종료하시겠습니까?</string>
+    <string name="yes">네</string>
+    <string name="no">아니요</string>
+    <string name="need_agree">페이스북 계정 1개당 무료시청을 제공하고있습니다. 로그인하시면 약관에 동의한 것으로 인정합니다.</string>
+</resources>
