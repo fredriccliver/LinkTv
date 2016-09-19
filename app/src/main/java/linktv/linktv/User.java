@@ -7,9 +7,6 @@ import java.net.URLEncoder;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by fredriccliver on 5/31/16.
- */
 public class User {
     public String fid = "";
     public String cookies = "";
@@ -20,7 +17,6 @@ public class User {
     }
 
     public void parseFBCookie(String cookie_str) {
-        //Log.d("tag", "reading cookie...");
 
         Log.d("tag", "Cookies string:  " + cookie_str);
 
@@ -39,24 +35,13 @@ public class User {
             }
 
             cookies = URLEncoder.encode(cookie_str);
-
-//
-//            if(!c_user.equals("")){
-//                cookieManager.setCookie(HOME_DOMAIN, cusercookie + "; Domain=." + HOME_DOMAIN);
-//            }
-//            cookieManager.setCookie(HOME_DOMAIN, fbcookie + "; Domain=." + HOME_DOMAIN);
-
             CookieSyncManager.getInstance().sync();
-
-            //CookieManager.getInstance().setCookie("http://socialup.de/", cookie_str);
-            //wv.loadUrl(HOME);
         }
     }
 
     private String extractCookieValue(String rawCookie, String cookie_name) throws Exception {
 
         Map<String, String> Cookies = new HashMap<String, String>();
-        //aMap.put("a" , Integer.valueOf(1));
 
         String[] rawCookieParams = rawCookie.split(";");
 

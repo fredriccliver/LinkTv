@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="fill_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="0dp"
-    android:paddingLeft="0dp"
-    android:paddingRight="0dp"
-    android:paddingTop="0dp"
-    tools:context="linktv.linktv.LoginIntent">
-
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="zangsisi.zangsisi.LoginIntent">
 
     <RelativeLayout
         android:orientation="vertical"
@@ -39,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_alignBottom="@+id/imageView"
-            android:layout_marginBottom="100dp"
+            android:layout_marginBottom="70dp"
             android:id="@+id/linearLayout">
 
             <ImageView
@@ -67,14 +66,13 @@
                 android:layout_above="@+id/skip_login"
                 android:layout_centerHorizontal="true" />
 
-            <!--<ImageView-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="60dp"-->
-            <!--android:id="@+id/skip_login"-->
-            <!--android:src="@drawable/skip_button"-->
-            <!--android:layout_alignParentBottom="true"-->
-            <!--android:layout_centerHorizontal="true" />-->
-
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:id="@+id/login_with_insta"
+                android:src="@drawable/login_button_ig"
+                android:layout_above="@+id/skip_login"
+                android:layout_centerHorizontal="true" />
 
         </LinearLayout>
 
@@ -118,3 +116,4 @@
     </LinearLayout>
 
 </RelativeLayout>
+
