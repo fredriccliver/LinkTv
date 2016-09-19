@@ -37,7 +37,7 @@ public class MainActivity extends Activity {
 
         wv = (WebView) findViewById(R.id.wv);
         // 웹뷰에서 자바스크립트실행가능
-        wv.getSettings().setJavaScriptEnabled(true);
+        wv.getSettings().setJavaScriptEnabled(true); //
 
         wv.loadUrl("http://linktv.club/");
 
