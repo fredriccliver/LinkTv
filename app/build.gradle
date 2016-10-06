@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId "linktv.linktv"
-        minSdkVersion 13
+        minSdkVersion 19
         targetSdkVersion 23
     }
     buildTypes {
